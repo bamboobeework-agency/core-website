@@ -60,7 +60,7 @@ const Footer: React.FC = () => {
                 </div>
                 <div>
                     <p className="text-xs text-gray-500 uppercase tracking-widest">Call Us</p>
-                    <p className="text-lg font-bold">+91 98765 43210</p>
+                    <p className="text-lg font-bold">+91 91402 15411</p>
                 </div>
              </div>
              
@@ -70,7 +70,7 @@ const Footer: React.FC = () => {
                 </div>
                 <div>
                     <p className="text-xs text-gray-500 uppercase tracking-widest">Email Us</p>
-                    <p className="text-lg font-bold">growth@ecomscale.com</p>
+                    <p className="text-lg font-bold">bamboobee.work@gmail.com</p>
                 </div>
              </div>
 
@@ -80,7 +80,7 @@ const Footer: React.FC = () => {
                 </div>
                 <div>
                     <p className="text-xs text-gray-500 uppercase tracking-widest">Visit Us</p>
-                    <p className="text-lg font-bold">Bangalore, Karnataka, IN</p>
+                    <p className="text-lg font-bold">Kanpur, Uttar Pradesh, IN</p>
                 </div>
              </div>
           </div>
@@ -111,7 +111,7 @@ const Footer: React.FC = () => {
             </form>
 
             <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-white/10 gap-4">
-                <p className="text-sm text-gray-500 text-center md:text-left">&copy; 2024 EcomScale. All rights reserved.</p>
+                <p className="text-sm text-gray-500 text-center md:text-left">&copy; 2026 BambooBee. All rights reserved.</p>
                 <div className="flex gap-4">
                     <a href="#" className="text-gray-400 hover:text-red-600 transition-colors"><Facebook size={20} /></a>
                     <a href="#" className="text-gray-400 hover:text-red-600 transition-colors"><Instagram size={20} /></a>
