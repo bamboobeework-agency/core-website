@@ -27,8 +27,7 @@ const Navbar: React.FC<NavbarProps> = ({ onOpenAudit }) => {
       >
         <div className="container mx-auto px-6 flex justify-between items-center">
           <div className="flex items-center">
-
-            <img src = "/Bamboobee_logo.png" className="h-12 w-auto"/>
+            <img src = "https://raw.githubusercontent.com/bamboobeework-agency/core-website/a3719bb728aca1c81506dad47a9a8e86531612e1/public/Bamboobee_logo.png" className="h-12 w-auto"/>
           </div>
 
           {/* Desktop Nav */}
