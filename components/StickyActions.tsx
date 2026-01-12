@@ -11,7 +11,7 @@ const StickyActions: React.FC<StickyActionsProps> = ({ onOpenAudit }) => {
     <div className="fixed right-4 bottom-8 z-50 flex flex-col gap-4 items-end">
       {/* WhatsApp */}
       <motion.a
-        href="https://wa.me/1234567890" // Replace with real number
+        href="https://wa.link/sg6q0s" // Replace with real number
         target="_blank"
         rel="noopener noreferrer"
         initial={{ x: 100, opacity: 0 }}
@@ -26,7 +26,7 @@ const StickyActions: React.FC<StickyActionsProps> = ({ onOpenAudit }) => {
 
       {/* Phone Call */}
       <motion.a
-        href="tel:+1234567890" // Replace with real number
+        href="tel:+91 9140215411" // Replace with real number
         initial={{ x: 100, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ delay: 0.6, type: 'spring' }}
