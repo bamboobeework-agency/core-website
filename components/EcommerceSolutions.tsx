@@ -1,6 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
+
 const platforms = [
   {
     id: 'amazon',
@@ -8,7 +10,8 @@ const platforms = [
     color: 'hover:bg-[#FF9900]',
     textColor: 'group-hover:text-white',
     description: 'Dominate the world’s largest marketplace with our end-to-end account management, A+ content, and PPC expertise.',
-    image: 'https://static.vecteezy.com/system/resources/previews/014/018/561/non_2x/amazon-logo-on-transparent-background-free-vector.jpg'
+    image: 'https://static.vecteezy.com/system/resources/previews/014/018/561/non_2x/amazon-logo-on-transparent-background-free-vector.jpg',
+    path:'/amazon'
 
   },
   {
@@ -17,7 +20,8 @@ const platforms = [
     color: 'hover:bg-[#2874F0]',
     textColor: 'group-hover:text-white',
     description: 'Capture the Indian market with strategic cataloging, Smart Fulfilment optimization, and Flipkart Ads management.',
-    image: 'https://pnghdpro.com/wp-content/themes/pnghdpro/download/social-media-and-brands/flipkart-logo-app-icon.png'
+    image: 'https://pnghdpro.com/wp-content/themes/pnghdpro/download/social-media-and-brands/flipkart-logo-app-icon.png',
+    path:'/flipkart'
   },
   {
     id: 'meesho',
@@ -25,7 +29,8 @@ const platforms = [
     color: 'hover:bg-[#d81b60]', 
     textColor: 'group-hover:text-white',
     description: 'Tap into the next billion users. We optimize your pricing and bulk cataloging to win on India’s fastest-growing social commerce app.',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/3/33/Meesho_logo.png'
+    image: 'https://upload.wikimedia.org/wikipedia/commons/3/33/Meesho_logo.png',
+    path:'/meesho'
   },
   {
     id: 'myntra',
@@ -33,7 +38,8 @@ const platforms = [
     color: 'hover:bg-[#ff3f6c]',
     textColor: 'group-hover:text-white',
     description: 'Position your fashion brand for premium success. We handle trend-focused listing, studio-quality imagery, and participation in mega sale events.',
-    image: 'https://i.pinimg.com/736x/68/6d/c5/686dc532a1d5ba6a70057b87815eb929.jpg'
+    image: 'https://i.pinimg.com/736x/68/6d/c5/686dc532a1d5ba6a70057b87815eb929.jpg',
+    path: '/myntra'
   }
 ];
 
@@ -82,6 +88,7 @@ const EcommerceSolutions: React.FC = () => {
               transition={{ delay: index * 0.1 }}
               className={`group bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 ${platform.color} flex flex-col`}
             >
+            <Link to={platform.path}>
               <div className="flex justify-between items-start mb-8">
                 <div className={`w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center transition-colors duration-500 group-hover:bg-white/20`}>
                     {/* <platform.icon className={`text-black transition-colors duration-500 ${platform.textColor}`} size={24} /> */}
@@ -107,6 +114,7 @@ const EcommerceSolutions: React.FC = () => {
                       Explore Growth <ArrowRight size={14} />
                   </span>
               </div>
+            </Link>
             </motion.div>
           ))}
         </div>
